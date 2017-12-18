@@ -1,0 +1,128 @@
+body {
+  background: #000000 url("bg.jpg") no-repeat center top;
+  color: white;
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: 'font1ce2d5cd34ac27b0c31dbf6cc3c1f272';
+  src:
+      url('https://nomail.com.ua/files/eot/1ce2d5cd34ac27b0c31dbf6cc3c1f272.eot?#iefix') format('embedded-opentype'),
+      url('https://nomail.com.ua/files/woff/1ce2d5cd34ac27b0c31dbf6cc3c1f272.woff') format('woff'),
+      url('https://nomail.com.ua/files/woff2/1ce2d5cd34ac27b0c31dbf6cc3c1f272.woff2') format('woff2');
+}
+
+@font-face { font-family: 'MyriadHebrew-Regular';  src: local('MyriadHebrew-Regular'), url('https://nomail.com.ua/files/woff/1ce2d5cd34ac27b0c31dbf6cc3c1f272.woff') format('woff'); }
+
+.logo-text {
+  font-size: 72px;
+  font-family: "MyriadHebrew-Regular";
+  color: rgb(255, 255, 255);
+  margin-top: -12px;
+}
+
+.logo-text::before {
+  content: "";
+ display: block;
+ border: 1px solid #ffffff;
+ background: url("logo.png") no-repeat;
+ width: 51px;
+ height: 51px;
+ float: left;
+ margin: 11px 10px 0 0;
+}
+
+.motto {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing:10px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+  margin-top: -15px;
+}
+
+.phone {
+  font-size: 24px;
+  float: left;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 0.889;
+}
+
+.phone::before {
+  content: "";
+ display: block;
+ background: url("phone.png") no-repeat;
+ width: 30px;
+ height: 30px;
+ float: left;
+ margin: 0 -5px 0 0;
+}
+
+.tag {
+  margin-top: 53px;
+  font-size: 18px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.185;
+}
+
+.tag::before {
+  content: "";
+ display: block;
+ background: url("tag.png") no-repeat;
+ width: 30px;
+ height: 30px;
+ float: left;
+ margin: 0 -5px 0 0;
+}
+
+.tag:hover::before {
+  background: url("tag1.png") no-repeat;
+}
+
+.schedule {
+  font-size: 18px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.611;
+  margin-left: 50px;
+}
+
+.schedule::before {
+  content: "";
+ display: block;
+ background: url("clock.png") no-repeat;
+ width: 30px;
+ height: 30px;
+ float: left;
+ margin: 0 10px 0 0;
+}
+
+.schedule:hover::before {
+  background: url("clock1.png") no-repeat;
+}
+
+.block {
+  text-align: left;
+}
+
+.link {
+  padding-left: 120px;
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(195, 235, 209);
+  text-decoration: underline;
+}
+
+
+.container {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 10px;
+  width: 980px;
+  text-align: center;
+  margin: auto;
+}
